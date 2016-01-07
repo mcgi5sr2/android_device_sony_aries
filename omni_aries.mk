@@ -31,6 +31,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
     device/sony/aries/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
 
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D5803
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D5803/D5803:5.1.1/23.4.A.0.546/864948651:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D5803-user 5.1.1 23.4.A.0.546 864948651 release-keys"
+
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_aries
 PRODUCT_MODEL := Xperia Z3 Compact
